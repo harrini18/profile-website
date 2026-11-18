@@ -7,7 +7,6 @@ on:
 
 jobs:
   validate:
-    run: npx --yes stylelint "css/**/*.css" --config .stylelintrc.json
     name: Validate HTML and CSS
     runs-on: ubuntu-latest
 
@@ -24,4 +23,4 @@ jobs:
         run: npx --yes htmlhint "**/*.html"
 
       - name: Validate CSS
-        run: npx --yes stylelint "css/**/*.css" --config-basedir .
+        run: npx --yes stylelint "css/**/*.css" --config .stylelintrc.json
