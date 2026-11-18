@@ -42,3 +42,34 @@ footer{padding:65px 0 28px;background:var(--color-bg-secondary)}.footergrid{disp
 .footer-title{font-size:2.2rem;margin-bottom:8px}
 .no-margin{margin:0}
 .img-failed{display:none}
+
+.family-card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+}
+
+.family-card > * {
+    backface-visibility: hidden;
+}
+
+.family-card::after {
+    content: "my little support system";
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    border-radius: 22px;
+    background: var(--color-bg-secondary);
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.family-card:hover {
+    transform: rotateY(180deg);
+}
