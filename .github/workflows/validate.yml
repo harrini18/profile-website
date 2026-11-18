@@ -1,0 +1,26 @@
+
+name: HTML and CSS Validation
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    name: Validate HTML and CSS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate HTML
+        run: npx --yes htmlhint "**/*.html"
+
+      - name: Validate CSS
+        run: npx --yes stylelint "css/**/*.css" --config .stylelintrc.json
