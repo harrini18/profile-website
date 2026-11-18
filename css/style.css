@@ -116,3 +116,5 @@ footer{padding:65px 0 28px;background:var(--color-bg-secondary)}.footergrid{disp
 .hobby img:hover {
     transform: scale(1.04);
 }
+
+.ear,.ear:after{display:none!important}
