@@ -33,13 +33,13 @@
   --transition-speed:.3s}
 
 [data-theme="dark"]{
-  --color-bg:#211e20;
-  --color-bg-card:#2d282b;
-  --color-text:#f7eee8;
-  --color-text-secondary:#c1b1aa;
-  --color-primary:#e3a27f;
-  --color-primary-light:#bd8067;
-  --color-bg-secondary:#403438;
-  --color-border:#514349;
-  --shadow-card:0 18px 50px #0005;
-  --color-nav:rgba(33,30,32,.88)}
+  --color-bg:#171b1a;
+  --color-bg-card:#222927;
+  --color-text:#f1f5f1;
+  --color-text-secondary:#b3c0b8;
+  --color-primary:#a8c9ad;
+  --color-primary-light:#c0d9c3;
+  --color-bg-secondary:#303b35;
+  --color-border:#46544b;
+  --shadow-card:0 18px 50px #0008;
+  --color-nav:rgba(23,27,26,.92)}
